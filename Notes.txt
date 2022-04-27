@@ -1,0 +1,84 @@
+27-Apr
+
+Simple Linear Regression - There is one input column which is used to predict the output
+Multi Linear Regression - Multiple independent variables(multiple input columns)
+
+Criteria for applying linear regression:
+The input and output should have almost a linear relationship
+
+Metrics:
+Regression
+-Mean Absolute Error
+-Mean Squared Error
+-Root Mean Squared Error
+-R2 Score
+-Adjusted R2 Score
+
+We use the errors to Optimize the model 
+
+A few models use Differentiation in optimation techniques
+hence MAE is not very effective
+so, the need for newer metric, hence MSE
+
+RMSE for better readability
+---------------------------------------------
+
+Bias
+Variance
+Overfitting
+Underfitting
+Regularization
+-L1 Regularization
+-L2 Regularization
+Bagging
+Boosting
+---------------------------
+overfitting - the model is accurately following the training data, but not having desired results on testing data.
+underfitting- the model does not learn the training properly and hence will nonot be able to predict the testing data properly as well.
+
+Bias- Inability of the model to learn from training data
+variance-Difference of errors on various types of data
+
+An ideal ML model should have:
+Low Bias
+Low Variance
+
+Bias-Variance tradeoff
+-Regularization
+-Bagging
+-Boosting
+----------------------
+
+L2 Regularization
+Ridge Regression
+E= sum(y-y_pred)^2 + lambda.m2  , where m=slope, lamba=hyperparameter
+
+
+range of lambda is 0 to infinity
+
+GridSearchCV - tune the hyperparamter
+
+m =  ("∑(x−" 𝑥′")(y−" 𝑦′") " )/(("∑(x−" 𝑥′")" 2) +lambda)
+
+
+L1 Regularization
+Lasso Regression
+lambda.|m|
+
+-------------------------------------
+
+Feature Engineering
+-Removing unneccesary features
+-Select best features
+-Feature Extraction: We create new features from the existing features
+
+Imputing missing values:
+a few rules we will assume
+if the percentage of missing values is between 0 and 20, fill it with mean, median or mode
+if the percentage of missing values is above 60%, remove the column because there is lots of missing data
+if the percentage of missing values is between 20 and 60, look for advance imputing techniques like: knn imputer,etc.
+-----------------------
+split the data into training and testing
+some part of data into training
+training data will be fed to the machine
+after machine is trained, we will validate it using the testing data
