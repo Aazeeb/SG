@@ -82,3 +82,37 @@ split the data into training and testing
 some part of data into training
 training data will be fed to the machine
 after machine is trained, we will validate it using the testing data
+
+
+------------------------
+02 May
+
+Encoding - to convert values from object datatype to numerical datatype
+Input
+Output
+
+For output value being non-numeric, we use Label Encoder
+For input value being non-numeric, there could be two types of data
+1. Ordinal
+2. Nominal
+For ordinal values, we use ordinal encoding, which will give each category the numerical predence based on the value it deserves
+For nominal values, we use one hot encoding
+----------------------------------
+
+Linear Regression
+Logistic Regression
+Clustering : Kmeans
+Decision Trees
+SVM - Support Vector machines
+Association
+--------------------------------------
+KMeans
+K- no of clusters
+
+k is determined by a few factors listed below
+- k should never be 1
+- k ideally should not exceed the square root of total number of points
+- k value could be found by using a statistical technique called as elbow method
+-Elbow method is a grpahical representation, where in we plot
+SSE on y-axis and no. of clusters on x-axis.
+Wherever the graph makes an elbow like point, that is taken as the value of k
