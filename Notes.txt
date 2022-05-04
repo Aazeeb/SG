@@ -116,3 +116,56 @@ k is determined by a few factors listed below
 -Elbow method is a grpahical representation, where in we plot
 SSE on y-axis and no. of clusters on x-axis.
 Wherever the graph makes an elbow like point, that is taken as the value of k
+----------------
+04-May
+
+Clustering Metric
+Silhoeutte Score
+------------------
+Logistic Regression
+
+Requirement:
+We should be able to linear separate the data by drawing a straight line(2D), plane(3D), hyperplane(higher dimension)
+if the above condition is satisfied, we can use logistic regression to classify the data
+We find the equation of line
+AX+By+C=0		(2D)
+Ax+By+Cz+D=0	(3D)
+
+we should be able to find A, B and C.
+
+taking the example
+cgpa	iq	placement
+7.5	61	1
+8.9	109	1
+7	81	0
+
+x=cgpa, y=iq
+s1=A(7.5)+B(61)=?
+if s1>=0, then student will be placed
+if s1<0, then student will not be placed
+
+but, there the values could range from -infinity to infinity
+
+this value will be passed tthrough a sigmoid function
+Sigmoid function will converts the value in the range to 0 to 1.
+
+s(x)=1/(1+(e^-x))
+
+100
+
+0 and 1
+s(x)>0.5, then prediction is +ve
+if s(x)<0.5, then prediction is -ve
+-------------------
+Standardization -1 to 1
+Normalization 0 to 1
+-----------------------------
+Classification metrics:
+Accuracy score
+Confusion Matrix
+Classification report
+Precision
+Recall
+F1 Score
+Area Under the CUrve(AUC)
+-------------------------
