@@ -160,6 +160,8 @@ if s(x)<0.5, then prediction is -ve
 Standardization -1 to 1
 Normalization 0 to 1
 -----------------------------
+11-May-2022
+
 Classification metrics:
 Accuracy score
 Confusion Matrix
@@ -168,9 +170,70 @@ Precision
 Recall
 F1 Score
 Area Under the CUrve(AUC)
--------------------------
+--------------------------
 Regression - Linear, Decision Tree
 Classification - Logistic Regression, Decision Trees
 Clustering - KMeans
 ------------------
+
+Precision can be seen as a measure of quality, and recall as a measure of quantity
+
+-----------------------------------------
+
+Decision Tree Algorithm
+
+
+CART Algorithm(Classification and Regression Trees)
+Decision tree is simply a collection of multiple conditional statements(if else loops)
+
+--
+-Begin with the training dataset, which should have some features and the output should have classification or regression values
+-Determine the best feature in the data to split the data on. we will look at how to determine the best feature later
+-Split the data into subsets that contain the correct values for this best feature. This splitting basically defines each node on the tree
+-Recursively generate new decision nodes until we get to the leaf node
+
+---Conclusions
+-Programatically speaking, decision trees are nothing but a giant structure of nested if-else condition
+-Mathematically speaking, decision trees uses lines/planes/hyperplanes which run parallel to any one of the axis to cut the co-ordinate system into rectangles/cuboids/hypercuboids
+
+--some unanswered questions
+-How to find which column should be selected as root node?
+-How to select subsequent decision nodes?
+-How to decide splitting criteria in case of numerical columns?
+
+---Advantages of CART
+-Intuitive and easy to understand
+-Minimal data preparation is required
+
+---Disadvantages of CART
+-Overfitting
+-Prone to errors for imbalanced datasets
+-------
+Entropy and Information Gain
+
+Entropy: Entropy is nothing but a measure of disorder. It is also called as measure of purity/impurity
+
+
+Ice, water, vapor
+
+---IG
+Information Gain, is a metric used to train decision trees.
+Specifically, this metric measures the quality of the split
+
+IG is inversely proportional to Entropy
+whenever we are contructing a decision tree, we select the feature having highest IG as the root node
+
+--------------
+Hyperparameter tuning
+
+
+IG= E(Parent)-(Weighted Average)*E(Children)
+
+---Gini Impurity
+We tend to use Gini more, because it is easier to calculate
+
+E=-Py(log(Py)-Pn(log(Pn)
+G=1-(Py^2+Pn^2)
+
+
 
