@@ -169,3 +169,8 @@ Recall
 F1 Score
 Area Under the CUrve(AUC)
 -------------------------
+Regression - Linear, Decision Tree
+Classification - Logistic Regression, Decision Trees
+Clustering - KMeans
+------------------
+
