@@ -236,4 +236,52 @@ E=-Py(log(Py)-Pn(log(Pn)
 G=1-(Py^2+Pn^2)
 
 
+----------------------------
+30 may
 
+Stop words
+
+Recommender System
+
+-----------------
+Association ruling
+baby products, milk and diapers
+A and B are bought together more frequently, then several steps can be taken to increase the profit
+(1) A and B can be placed together
+(2) Targeted ads on product B to people who buy product A
+(3) Collective discounts
+(4) Both A and B can be packaged together
+
+Association rule mining
+Apriori Algorithm
+
+3 major components
+(1) Support
+(2) Confidence
+(3) Lift
+
+1000 customer transactions
+out of 1000, 100 contain ketchup and 150 of them contains burgers
+out of 150, 50 contain ketchup as well
+
+Support: popularity of an item
+
+Support(B) = Transcations containing B/total transactions
+
+support(ketchup)=100/1000= 0.10=10%
+
+Confidence
+It is likelihood that item B is also bought when item A is bought
+condifende(A->B)= transactions involving A and B both/transaction of A
+
+Likelihood of buying ketcup when burger is bought
+confidence(Burger->Ketchup)=50/150=33%
+
+Lift
+Lift(A->B) refers to increase in ratio of sale of B when A is sold
+lift(A->B)=confidence(A->B)/support(B)
+=(33%)/10%
+=3.33
+Likelihood of buying a burger and ketchup together is 3.33 times more than the likelihood of buying the ketchup alone.
+
+Apriori Algorithm
